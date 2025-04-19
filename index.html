@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Clique Tique - Home Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />    
+	<link href="css/templatemo-style.css" rel="stylesheet" />
+</head>
+<!--
+
+Simple House
+
+https://templatemo.com/tm-539-simple-house
+
+-->
+<body> 
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/jacket-final.png">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="img/cliquetique-logo.png" alt="Logo" class="tm-site-logo" /> 
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">Clique Tique</h1>
+								<h6 class="tm-site-description">antique fashion for unique person</h6>	
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link active">Home</a></li>
+								<li class="tm-nav-li"><a href="about.html" class="tm-nav-link">About</a></li>
+								<li class="tm-nav-li"><a href="contact.html" class="tm-nav-link">Contact</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Welcome to Clique Tique</h2>
+				<p class="col-12 text-center">   We are a vibrant fashion store dedicated to bold, colorful, and funky styles.  
+					At Clique Tique, we believe fashion should be fun, fearless, and full of personality.  
+					Dive into our unique world of statement-making fashion — colorful bags, funky shoes, and playful hats.  
+					<strong>Go ahead, check out our collection of bags, shoes, and hats now!</strong></p>
+			</header>
+			
+			<div class="tm-paging-links text-center">
+				<nav>
+					<ul style="display: inline-block;">
+						<li class="tm-paging-item"><a href="bag.html" class="tm-nav-link" style="color: #000000; font-weight: bold;">Bag</a></li>
+						<li class="tm-paging-item"><a href="shoes.html" class="tm-nav-link" style="color: #000000; font-weight: bold;">Shoes</a></li>
+						<li class="tm-paging-item"><a href="hat.html" class="tm-nav-link" style="color: #000000; font-weight: bold;">Hat</a></li>
+					</ul>
+				</nav>
+			</div>
+			
+			<!-- Gallery -->
+			<div class="row tm-gallery">
+				<!-- Removed gallery page 1 content -->
+		   </div>
+
+			<div class="tm-section tm-container-inner">
+				<div class="row">
+					<div class="col-md-6">
+						<figure class="tm-description-figure">
+							<img src="img/img-01.jpg" alt="Image" class="img-fluid" />
+						</figure>
+					</div>
+					<div class="col-md-6">
+						<div class="tm-description-box"> 
+							<h4 class="tm-gallery-title">Clique Tique</h4>
+							<p class="tm-mb-45">The first ever fashion store with a funky concept and bold spirit.  
+								Clique Tique leads the way in colorful, quirky accessories with a touch of attitude.  
+								More than a trend — we create a movement for unique souls with a taste for fun.  
+								<strong>The first funky fashion store with a truly unique market presence.</strong></p>
+							<a href="about.html" class="tm-btn tm-btn-default tm-right">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; 2025 Clique Tique 
+            
+            | Featured: <a rel="nofollow" href="https://chat.openai.com/">The Twink</a></p>
+		</footer>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Handle click on paging links
+			$('.tm-paging-link').click(function(e){
+				e.preventDefault();
+				
+				var page = $(this).text().toLowerCase();
+				$('.tm-gallery-page').addClass('hidden');
+				$('#tm-gallery-page-' + page).removeClass('hidden');
+				$('.tm-paging-link').removeClass('active');
+				$(this).addClass("active");
+			});
+		});
+	</script>
+</body>
+</html>
